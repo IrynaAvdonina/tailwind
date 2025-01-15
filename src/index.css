@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-publicSans
+  }
+
+  .btn-invite {
+    @apply px-8 py-3 text-white rounded-full bg-gradient-to-r from-green to-blue h-12 w-44 hover:opacity-50 transition
+  }
+
+  .article {
+    @apply bg-white rounded-lg hover:shadow-lg transition pb-10 md:pb-2
+  }
+
+  .article img {
+    @apply w-full object-cover h-48 rounded-t-lg
+  }
+
+  .article-info {
+    @apply p-4;
+  }
+
+  .article-author {
+    @apply pb-3 text-xs text-gray-500
+  }
+
+  .article-info h4 {
+    @apply pb-3 font-bold hover:text-green cursor-pointer transition
+  }
+
+  .article-description {
+    @apply text-sm text-gray-500 line-clamp-3
+  }
+
+  .features-card {
+    @apply flex flex-col items-center md:items-start
+  }
+
+  .features-card h3 {
+    @apply py-6 text-2xl;
+  }
+
+  .features-card p {
+    @apply text-gray-500;
+  }
+
+  .extend-navigation ul {
+    @apply flex flex-col gap-y-2 items-center md:items-start
+  }
+
+  .extend-navigation ul li {
+    @apply hover:text-green cursor-pointer
+  }
+
+  header nav li {
+    @apply py-8 border-b-4 border-b-transparent hover:border-b-green transition
+  }
+}
